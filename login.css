@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Main Container */
+.container {
+    position: relative;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    display: flex;
+    overflow: hidden;
+}
+
+/* Form Container */
+.form-container {
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #dfdeef;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+
+/* Overlay Container - Positioned to the right */
+.overlay-container {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+}
+h1 {
+    text-align: center; /* Centers the text */
+    color: rgb(34, 67, 128); /* Apply your theme color */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Overlay with RGB(34, 67, 128) */
+.overlay {
+    background: linear-gradient(to right, rgba(34, 67, 128, 0.9), rgba(34, 67, 128, 1));
+    background-size: cover;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay-panel {
+    padding: 20px;
+}
+
+/* Inputs and Buttons */
+input {
+    background-color: #eee;
+    border: none;
+    padding: 12px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid rgb(34, 67, 128);
+    background-color: rgb(34, 67, 128); /* Base button color */
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: rgb(20, 50, 110); /* Darker shade on hover */
+    border-color: rgb(20, 50, 110);
+    box-shadow: 0px 4px 10px rgba(20, 50, 110, 0.3);
+    transform: scale(1.05);
+}
+select {
+    width: 35%;
+    padding: 12px;
+    border: 2px solid rgb(34, 67, 128);
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 16px;
+    color: rgb(34, 67, 128);
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+select:hover {
+    border-color: rgb(20, 50, 110);
+}
+
+/* Focus Effect */
+select:focus {
+    border-color: rgb(20, 50, 110);
+    box-shadow: 0 0 5px rgba(34, 67, 128, 0.5);
+}
+
+/* Dropdown Arrow Customization */
+select::-ms-expand {
+    display: none; /* Hide default arrow in IE */
+}
+
+select option {
+    background: #fff;
+    color: rgb(34, 67, 128);
+    font-size: 16px;
+}
+
+/* Selected Option Styling */
+select option:checked {
+    background-color: rgb(34, 67, 128);
+    color: #fff;
+}

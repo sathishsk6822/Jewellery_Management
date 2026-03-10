@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #007bff;
+    font-weight: 600;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    background: #fff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h5 {
+    color: #343a40;
+    font-weight: 600;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px;
+}
+
+/* List Group Customization */
+.list-group-item {
+    border: none;
+    border-radius: 6px;
+    background: #eef2f7;
+    margin-bottom: 6px;
+    transition: background 0.3s;
+}
+
+.list-group-item:hover {
+    background: #dde5f1;
+}
+
+/* Badge Customization */
+.badge {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+}
+
+/* Logout Button */
+.btn-danger {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-danger:hover {
+    background: #dc3545;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-4,
+    .col-md-6,
+    .col-md-8 {
+        margin-bottom: 20px;
+    }
+}

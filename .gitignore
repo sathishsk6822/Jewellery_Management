@@ -1,0 +1,8 @@
+vendor/
+node_modules/
+.vscode/
+.env
+*.sql
+# dbconnect.php # Uncomment if you want to keep your database credentials private
+uploads/
+image/
