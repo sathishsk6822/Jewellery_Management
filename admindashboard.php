@@ -1,5 +1,5 @@
 <?php
-include("dbconnect.php");
+include("includes/dbconnect.php");
 
 // Fetch total pledges
 $pledges_result = $conn->query("SELECT COUNT(*) AS total_pledges FROM pledge_tbl");
